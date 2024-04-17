@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['ui-sans-serif', 'system-ui', ...],
+                        'serif': ['ui-serif', 'Georgia', ...],
+                        'mono': ['Montserrat', 'ui-monospace', 'SFMono-Regular', ...],
+                        'display': ['Oswald', ...],
+                        'body': ['"Open Sans"', ...],
+                    }
+                }
+            }
+        }
+    </script> -->
+    <title>fitness app</title>
+</head>
+<body>
+    <div class="container w-10/12 lg:w-1/4 mx-auto p-5 flex flex-col justify-between h-screen">
+        <a href="./create-acc.html" class="underline text-right text-blue-700">Skip</a>
+        <img src="./images/trackGoal.svg" alt="track-goal" class="">
+        <h2 class="text-2xl font-medium">Track Your Goal</h2>
+        <p>Don’t worry if you have trouble determining your goals, We can help you determine your goals and track your goals</p>
+        <img src="./images/circle1.svg" alt="" class="ml-auto" onclick="handleClick()">
+    </div>
+
+    
+    <script>
+        function handleClick() {
+            window.location.href = "./create-acc.html";
+        }
+    </script>
+</body>
+</html>

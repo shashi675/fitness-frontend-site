@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['ui-sans-serif', 'system-ui', ...],
+                        'serif': ['ui-serif', 'Georgia', ...],
+                        'mono': ['Montserrat', 'ui-monospace', 'SFMono-Regular', ...],
+                        'display': ['Oswald', ...],
+                        'body': ['"Open Sans"', ...],
+                    }
+                }
+            }
+        }
+    </script> -->
+    <title>fitness app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container w-10/12 lg:w-1/4 mx-auto p-5 h-screen flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-medium mb-10">Create an account</h2>
+            <div action="" class="flex flex-col">
+                <input class="bg-gray-200 p-2 rounded-md outline-none mb-4" type="text" name="f-name" id="f-name" placeholder="First Name" >
+                <input class="bg-gray-200 p-2 rounded-md outline-none mb-4" type="text" name="l-name" id="l-name" placeholder="Last Name">
+                <input class="bg-gray-200 p-2 rounded-md outline-none mb-4" type="email" name="email" id="email" placeholder="Email">
+                <input class="bg-gray-200 p-2 rounded-md outline-none mb-4" type="password" name="pass" id="pass" placeholder="Password">
+                <span><input class="inline-block h-5 w-5" type="checkbox" name="t&c" id="t&c">
+                By proceeding, I agree to all T&C and  Privacy Policy</span>
+            </div>
+        </div>
+        <div>
+            <button class="h-10 rounded-md text-white mt-10" onclick="handleClick()">Create an Account</button>
+            <div class="flex items-center justify-between my-5">
+                <div class="w-2/5 h-px bg-gray-500"></div>
+                <span class="">Or</span>
+                <div class="w-2/5 h-px bg-gray-500"></div>
+            </div>
+            <div class="flex items-center w-2/5 mx-auto justify-between">
+                <div class="border-solid border-2 border-gray-500 rounded-md p-2 cursor-pointer">
+                    <img src="./images/google.svg" alt="google">
+                </div>
+                <div class="border-solid border-2 border-gray-500 rounded-md p-2 cursor-pointer">
+                    <img src="./images/fb.svg" alt="fb">
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                Already have an account?
+                <a href="./login.html" class="underline text-right text-blue-700"> Login</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        function handleClick() {
+            window.location.href = "./login.html";
+        }
+    </script>
+</body>
+</html>

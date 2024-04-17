@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['ui-sans-serif', 'system-ui', ...],
+                        'serif': ['ui-serif', 'Georgia', ...],
+                        'mono': ['Montserrat', 'ui-monospace', 'SFMono-Regular', ...],
+                        'display': ['Oswald', ...],
+                        'body': ['"Open Sans"', ...],
+                    }
+                }
+            }
+        }
+    </script> -->
+    <title>fitness app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container w-10/12 lg:w-1/4 mx-auto p-5 h-screen relative">
+            <div class="flex items-center mb-5 gap-10">
+                <img src="./images/chevron-left.svg" alt="">
+                <h2 class="text-2xl font-medium inline-block">Workout Schedule</h2>
+            </div>
+            
+            <div class="flex w-3/5 justify-between mx-auto mb-5">
+                <img src="./images/left-arrow.svg" alt="">
+                <span>Feb 2024</span>
+                <img src="./images/right-arrow.svg" alt="">
+            </div>
+            <img src="./images/Calendar.svg" alt="" class="mb-5">
+
+            <!-- bg-fuchsia-300 -->
+
+            <div class="mb-6">
+                <div class="mb-2">
+                    <p>06:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2 relative">
+                    <p>07:00 AM</p>
+                    <div class="backgroud-pink rounded-2xl p-1">Ab Workout, 7:30am</div>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>08:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2 relative">
+                    <p>09:00 AM</p>
+                    <div class="backgroud-pink rounded-2xl p-1">Upperbody Workout, 9am</div>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>10:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>11:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>12:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>01:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2 relative">
+                    <p>02:00 AM</p>                    
+                    <div class="backgroud-pink time-2pm background-gray rounded-2xl p-1">Lowerbody Workout, 3pm</div>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>03:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>04:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+                <div class="mb-2">
+                    <p>05:00 AM</p>
+                    <div class="h-px bg-gray-500"></div>
+                </div>
+            </div>
+
+
+            <img src="./images/footer-search.svg" alt="" class="h-16 w-16 mx-auto -m-10 z-20 relative">
+            <div class="bg-white px-5 py-3 sticky bottom-0 w-full h-5">
+                <img src="./images/footer.svg" alt="" class="w-full">
+            </div>
+    </div>
+
+    
+    <script>
+        function handleClick() {
+            window.location.href = "./schedule.html";
+        }
+    </script>
+</body>
+</html>
